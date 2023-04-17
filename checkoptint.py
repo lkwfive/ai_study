@@ -1,11 +1,10 @@
-import os
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
 
 checkpoint_path = "training/cp.ckpt"
-checkpoint_dir = os.path.dirname(checkpoint_path)
 
+# save_weights_only:保存权重 verbose:显示日志
 cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,
                                                  save_weights_only=True,
                                                  verbose=1)
