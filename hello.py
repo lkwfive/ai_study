@@ -12,7 +12,7 @@ ys = np.array([-2, 1, 4, 7, 10, 13, 16, 19, 22])
 model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])  #序列训练模型 神经元 形状
 model.compile(optimizer='sgd', loss='mean_squared_error') #随机梯度下降 均方误差
 # 训练模型
-model.fit(xs, ys, epochs=1000)
+model.fit(xs, ys, epochs=100)
 
 # 保存模型
 # model.save(save_path)
