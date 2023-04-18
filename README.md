@@ -19,5 +19,5 @@ pip install numpy
 
 #### 运行示例
 ```
-python 
+python hello.py
 ```
